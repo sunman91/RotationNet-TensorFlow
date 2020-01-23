@@ -26,7 +26,9 @@ class Config():
     CROP_HEIGHT = 204
     CROP_WIDTH = 204
 
-    VGG_CHECKPOINT_PATH = os.path.join(BATCH_SIZE, 'vgg16model', 'vgg_16.ckpt')
-    DATA_DIR = os.path.join(BATCH_SIZE, 'data', 'modelnet40v2png_ori4')
+    #VGG_CHECKPOINT_PATH = os.path.join(BATCH_SIZE, 'vgg16model', 'vgg_16.ckpt') 
+    VGG_CHECKPOINT_PATH = os.path.join(BASE_DIR, 'vgg16model', 'vgg_16.ckpt') 
+    #DATA_DIR = os.path.join(BATCH_SIZE, 'data', 'modelnet40v2png_ori4')
+    DATA_DIR = os.path.join(BASE_DIR, 'data', 'modelnet40v2png_ori4')
 
 config = Config()
